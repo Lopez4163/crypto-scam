@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+<head>
+{% block title %}{% endblock %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}" >
+</head>
+
+<body>
+{% block BGIMG %}
+  <div id="bg-img" class="container">
+    <img class="img-fluid" style="height:530px" src="/static/banner.jpg">
+  </div>
+{% endblock %}
+
+{% block card %}
+<div id="card1" class="card" style="width: 35rem;">
+  <div class="card-body">
+    <h5 class="card-title">WELCOME TO CRYPTO$CAM</h5>
+    <p class="card-text">Crypto$cam is the latest and greatest in the generic crypto market watch! Enjoy having access to real time prices of
+      the most popular "Tokens" to date! 
+    </p>
+    <img id="tokens-img" src="/static/tokens.png" class="card-img-top" alt="###">
+  </div>
+</div>
+{% endblock %}
+
+{% block table %}
+  <div id="crypto-table-div" class="container">
+    <table class="table  table-hover" style="color:black;">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Coin Name </th>
+          <th scope="col">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for key, value in coin_dict.items()%}
+        <tr>
+          <td>{{key}}</td>
+          <td>{{value}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}
+ </body>
+
+
+

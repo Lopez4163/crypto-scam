@@ -1,0 +1,88 @@
+body {
+        background-color:black;
+        overflow-x: hidden;
+   }
+    #bg-img {
+        position: relative;
+        right: 105px;
+   }
+    #card1 {
+        position: absolute;
+        background-color:rgba(0, 0, 0, 0.767);
+        top:110px;
+        left:85px;
+        color: limegreen;
+        font-family: 'Pixel Square', sans-serif;
+   }
+    #crypto-table-div {
+        position: absolute;
+        top: 63px;
+        left: 750px ;
+        right: 0;
+        width: 550px;
+        height: 542px;
+        overflow-y:scroll;
+        overflow-x: hidden;
+    }
+    .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+        background-color:chartreuse;
+          
+   }
+    th {
+        padding: 15px;
+        text-align: left;
+        color: limegreen;
+        font-family: 'Pixel Square', sans-serif;
+        font-size: larger;
+        font-weight: 600;
+   }
+    td {
+        padding: 15px;
+        text-align: left;
+        color: limegreen;
+        font-family: 'Pixel Square', sans-serif;
+        font-weight: 700;
+   }
+    #navbar-font {
+        color:limegreen;
+        font-family: 'Pixel Square', sans-serif;
+        font-weight:700;
+        font-size: xx-large;
+        
+   }
+   #navimg {
+        position:absolute;
+        top: 3px;
+        height: 80%;
+        left: 950px;
+    }
+    .marquee {
+        height: 50%;
+        width: 450px;
+        margin-right: 250px;
+        background-color:black;
+        font-family: 'Pixel Square', sans-serif;
+        color:yellow;
+        white-space: nowrap;
+        overflow: hidden;
+        box-sizing: border-box;
+   }
+    #value {
+        color:limegreen;
+   }
+    .marquee p {
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 20s linear infinite;
+        text-transform: uppercase;
+   }
+    @keyframes marquee {
+        0% {
+            transform: translate(0, 0);
+       }
+        100% {
+            transform: translate(-6%, 0);
+       }
+   }
+    
+   
