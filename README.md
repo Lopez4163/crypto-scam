@@ -17,3 +17,24 @@ python3 -m venv venv
 ```bash
 pip3 install flask
 ```
+## Set the FLASK_APP environment variable:
+```bash
+export FLASK_APP=main.py
+```
+## Run the Flask app:
+```bash
+flask run
+```
+## or
+```bash
+python3 main.py
+```
+## TO RUN IN THE BACKGROUND IN AWS EC2
+```bash
+nohup flask run --host=0.0.0.0 --port=5000 --cert=cert.pem --key=key.pem &
+ps aux | grep "flask run"
+```
+## Install Flask and Dependencies:
+```bash
+pip3 install flask
+```
