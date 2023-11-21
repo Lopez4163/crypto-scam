@@ -12,3 +12,14 @@ Make sure when cloning this git repo to create the proper virtual environment an
 ```bash
 python3 -m venv venv
 
+## Install Flask and Dependencies:
+```bash
+pip3 install flask
+
+## Create a Virtual Environment (Optional but Recommended):
+```bash
+python3 -m venv venv
+
+## Create a Virtual Environment (Optional but Recommended):
+```bash
+python3 -m venv venv
