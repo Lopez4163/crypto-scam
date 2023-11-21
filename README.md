@@ -1,23 +1,40 @@
 # Crypto Market Price Watch
 
-**\***Important**\***
-make sure when cloning this git repo to create the proper virtual enviorment and utilizew python3 and pip3, NOT python and pip. Follow the commands bellow
+# 📈 Crypto Market Price Watch
 
-Create a Virtual Environment (Optional but Recommended):
+** 🚨 Important 🚨 **  
+- IT IS SAFE TO ADVANCE, ISSUE WITH SSH KEYS! IT IS RUNNING ON THE LOCAL HOST OF AN EC2 ALL GOOD!_
+- APP MAY NORT DISPLAY ALL COINS DUE TO ITS AGE_
+
+Make sure when cloning this git repo to create the proper virtual environment and utilize Python3 and pip3, NOT python and pip. Follow the commands below:
+
+## Create a Virtual Environment (Optional but Recommended):
+```bash
 python3 -m venv venv
+```
 
-Activate the virtual environment:
-source venv/bin/activate
-
-Install Flask and Dependencies:
+## Install Flask and Dependencies:
+```bash
 pip3 install flask
-
-Set the FLASK_APP environment variable:
+```
+## Set the FLASK_APP environment variable:
+```bash
 export FLASK_APP=main.py
-
-Run the Flask app:
+```
+## Run the Flask app:
+```bash
 flask run
-
-If you encounter any issues with the flask command, you can use the following alternative:
-
+```
+## or
+```bash
 python3 main.py
+```
+## TO RUN IN THE BACKGROUND IN AWS EC2
+```bash
+nohup flask run --host=0.0.0.0 --port=5000 --cert=cert.pem --key=key.pem &
+ps aux | grep "flask run"
+```
+## Install Flask and Dependencies:
+```bash
+pip3 install flask
+```
